@@ -1,0 +1,14 @@
+/Users/admin/Desktop/Hello/bin/Debug/net8.0/Hello
+/Users/admin/Desktop/Hello/bin/Debug/net8.0/Hello.deps.json
+/Users/admin/Desktop/Hello/bin/Debug/net8.0/Hello.runtimeconfig.json
+/Users/admin/Desktop/Hello/bin/Debug/net8.0/Hello.dll
+/Users/admin/Desktop/Hello/bin/Debug/net8.0/Hello.pdb
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.AssemblyInfoInputs.cache
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.AssemblyInfo.cs
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.dll
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/refint/Hello.dll
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.pdb
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.genruntimeconfig.cache
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/ref/Hello.dll
