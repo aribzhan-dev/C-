@@ -12,3 +12,4 @@
 /Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.pdb
 /Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.genruntimeconfig.cache
 /Users/admin/Desktop/Hello/obj/Debug/net8.0/ref/Hello.dll
+/Users/admin/Desktop/Hello/obj/Debug/net8.0/Hello.sourcelink.json
