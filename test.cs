@@ -99,12 +99,133 @@ public class HelloWorld
         //     Console.WriteLine("Access denied");
 
 
-        Console.Write("Enter number: ");
-        int n = Convert.ToInt32(Console.ReadLine());
-        if (0 < n && n < 100 || 0 == n && n > 10)
-            Console.WriteLine("True");
-        else
-            Console.WriteLine("False");
+
+        // Console.Write("Enter number: ");
+        // int n = Convert.ToInt32(Console.ReadLine());
+        // if (0 < n && n < 100 || 0 == n && n > 10)
+        //     Console.WriteLine("True");
+        // else
+        //     Console.WriteLine("False");
+
+
+
+        // 18.09.25
+        // Console.Write("Task 1");
+        // Console.Write("Enter  number");
+        // int a = Convert.ToInt32(Console.ReadLine());
+        // if (a >= 0)
+        //     Console.WriteLine("Positive");
+        // else
+        //     Console.WriteLine("Negative");
+
+
+        // Console.Write("Task 2");
+        // Console.Write("Enter fisrt number");
+        // int a = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Enter second number");
+        // int b = Convert.ToInt32(Console.ReadLine());
+        // if (a > b)
+        //     Console.WriteLine(b);
+        // if (b == a)
+        //     Console.WriteLine("Equal");
+        // else
+        //     Console.WriteLine(a);
+
+
+        // Console.Write("Task3");
+        // Console.Write("Enter  number");
+        // int a = Convert.ToInt32(Console.ReadLine());
+        // switch (a)
+        // {
+        //     case 1:
+        //         Console.WriteLine("Monday");
+        //         break;
+        //     case 2:
+        //         Console.WriteLine("Tuesday");
+        //         break;
+        //     case 3:
+        //         Console.WriteLine("Wednesday");
+        //         break;
+        //     case 4:
+        //         Console.WriteLine("Thursday");
+        //         break;
+        //     case 5:
+        //         Console.WriteLine("Friday");
+        //         break;
+        //     case 6:
+        //         Console.WriteLine("Saturday");
+        //         break;
+        //     case 7:
+        //         Console.WriteLine("Sunday");
+        //         break;
+        //     default:
+        //         Console.WriteLine("Error");
+        //         break;
+        // }
+
+
+        // Console.Write("Task 4");
+        // Console.Write("Enter  a mark");
+        // int mark = Convert.ToInt32(Console.ReadLine());
+        // if (mark >= 90 && mark <= 100)
+        //     Console.WriteLine("Отлично");
+        // else if (mark >= 70 && mark < 90)
+        //     Console.WriteLine("Хорошо");
+        // else if (mark >= 50 && mark < 70)
+        //     Console.WriteLine("Удовлетворительно");
+        // else if (mark < 50)
+        //     Console.WriteLine("Неудовлетворительно");
+        // else
+        //     Console.WriteLine("Error");
+
+        // Console.Write("Task 5");
+        // Console.Write("Enter fisrt number");
+        // int a = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Enter second number");
+        // int b = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Enter operation (+, -, *, /): ");
+        // string operation = Console.ReadLine();
+        // switch (operation)
+        // {
+        //     case "+":
+        //         Console.WriteLine($"{a} + {b} = {a + b}");
+        //         break;
+        //     case "-":
+        //         Console.WriteLine($"{a} - {b} = {a - b}");
+        //         break;
+        //     case "*":
+        //         Console.WriteLine($"{a} * {b} = {a * b}");
+        //         break;
+        //     case "/":
+        //         if (b != 0)
+        //             Console.WriteLine($"{a} / {b} = {a / b}");
+        //         else
+        //             Console.WriteLine("Error: Division by zero");
+        //         break;
+        //     default:
+        //         Console.WriteLine("Error: Invalid operation");
+        //         break;
+        // }
+
+
+        Console.Write("Task 6");
+        Console.Write("Enter traffic light color (red, yellow, green): ");
+        string trafficLight = Console.ReadLine();
+        switch (trafficLight)
+        {
+            case "red":
+                Console.WriteLine("Стой");
+                break;
+            case "yellow":
+                Console.WriteLine("Приготовься");
+                break;
+            case "green":
+                Console.WriteLine("Иди");
+                break;
+            default:
+                Console.WriteLine("Error");
+                break;
+        }
 
 
 
