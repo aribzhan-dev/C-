@@ -208,25 +208,78 @@ public class HelloWorld
         // }
 
 
-        Console.Write("Task 6");
-        Console.Write("Enter traffic light color (red, yellow, green): ");
-        string trafficLight = Console.ReadLine();
-        switch (trafficLight)
-        {
-            case "red":
-                Console.WriteLine("Стой");
-                break;
-            case "yellow":
-                Console.WriteLine("Приготовься");
-                break;
-            case "green":
-                Console.WriteLine("Иди");
-                break;
-            default:
-                Console.WriteLine("Error");
-                break;
-        }
+        // Console.Write("Task 6");
+        // Console.Write("Enter traffic light color (red, yellow, green): ");
+        // string trafficLight = Console.ReadLine();
+        // switch (trafficLight)
+        // {
+        //     case "red":
+        //         Console.WriteLine("Стой");
+        //         break;
+        //     case "yellow":
+        //         Console.WriteLine("Приготовься");
+        //         break;
+        //     case "green":
+        //         Console.WriteLine("Иди");
+        //         break;
+        //     default:
+        //         Console.WriteLine("Error");
+        //         break;
+        // }
 
+
+
+        // 19.09.25
+        // Console.Write("Task 1");
+        // for (int i = 0; i <= 11; i+=2)
+        // {
+        //     Console.WriteLine(i);
+        // }
+
+
+        // Console.Write("Task 2");
+        // for (int i = 11; i >= 1; i--)
+        // {
+        //     Console.WriteLine(i);
+        // }
+
+
+        // Console.Write("Task 3");
+        // int i = 1;
+        // while (i <= 4)
+        // {
+        //     Console.WriteLine("Учусь в C#");
+        //     i++;
+        // }
+
+
+        // Console.Write("Task 4");
+        // int i = 1;
+        // while (i <= 7)
+        // {
+        //     Console.WriteLine(i);
+        //     i++;
+        // }
+
+
+        // Console.Write("Task 5");
+        // int i = 1;
+        // do
+        // {
+        //     Console.WriteLine(i);
+        //     i++;
+        // } while (i <= 3);
+
+
+
+        // Console.Write("Task 6");
+        // int i = 1;
+        // do
+        // {
+        //     Console.WriteLine("Повторение");
+        //     i++;
+        // }
+        // while (i <= 2);
 
 
 
