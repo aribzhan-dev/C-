@@ -296,13 +296,20 @@ public class HelloWorld
         // Console.WriteLine(numbers.Min());
 
 
-        Console.WriteLine("Task 3");
-        int[,] numbers = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-        foreach (int number in numbers)
-        {
-            Console.WriteLine(number);
-        }
+        // Console.WriteLine("Task 3");
+        // int[,] numbers = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        // foreach (int number in numbers)
+        // {
+        //     Console.WriteLine(number);
+        // }
 
+
+        Console.WriteLine("Task 4");
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        Console.WriteLine($"the length of list -- > {numbers.Length}");
+
+        Console.WriteLine("Task 5");
+        Console.WriteLine($"the first elemetn -- > {numbers[0]} and the last element -- > {numbers[numbers.Length - 1]}");
             
 
 
