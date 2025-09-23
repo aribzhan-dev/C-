@@ -244,6 +244,7 @@ public class HelloWorld
         // }
 
 
+
         // Console.Write("Task 3");
         // int i = 1;
         // while (i <= 4)
@@ -281,6 +282,28 @@ public class HelloWorld
         // }
         // while (i <= 2);
 
+
+        //  23.09.25
+        // Console.WriteLine("Task 1");
+        // int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        // foreach (int number in numbers)
+        // {
+        //     Console.WriteLine(number);
+        // }
+
+        // Console.WriteLine("Task 2");
+        // Console.WriteLine(numbers.Max());
+        // Console.WriteLine(numbers.Min());
+
+
+        Console.WriteLine("Task 3");
+        int[,] numbers = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+
+            
 
 
     }
