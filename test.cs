@@ -304,13 +304,47 @@ public class HelloWorld
         // }
 
 
-        Console.WriteLine("Task 4");
-        int[] numbers = { 1, 2, 3, 4, 5 };
-        Console.WriteLine($"the length of list -- > {numbers.Length}");
+        // Console.WriteLine("Task 4");
+        // int[] numbers = { 1, 2, 3, 4, 5 };
+        // Console.WriteLine($"the length of list -- > {numbers.Length}");
 
-        Console.WriteLine("Task 5");
-        Console.WriteLine($"the first elemetn -- > {numbers[0]} and the last element -- > {numbers[numbers.Length - 1]}");
-            
+        // Console.WriteLine("Task 5");
+        // Console.WriteLine($"the first elemetn -- > {numbers[0]} and the last element -- > {numbers[numbers.Length - 1]}");
+
+
+
+        // Home work 23.09.25
+        // Console.WriteLine("Task 1");
+        // int[] numbers = { 1, 2, 3, 4, 5 };
+        // foreach (int number in numbers)
+        // {
+        //     Console.WriteLine(number);
+        // }
+
+
+        // Console.WriteLine("Task 2");
+        // int[] numbers = { 1, 2, 3, 4 };
+        // Console.WriteLine(numbers.Sum());
+
+
+        Console.WriteLine("Task 3");
+        Console.Write("Enter a string: ");
+        string str = Console.ReadLine();
+        Console.WriteLine($"Length of the string: {str.Length}");
+        Console.WriteLine(str.ToUpper());
+        int counter = 0;
+        for (int s = 0; s <= (str.Length)-1; s++)
+        {
+            if (str.ToLower()[s] == 'a' || str.ToLower()[s] == 'e' || str.ToLower()[s] == 'i' || str.ToLower()[s] == 'o' || str.ToLower()[s] == 'u' || str.ToLower()[s] == 'y')
+            {
+                counter++;
+            }
+        }
+        Console.WriteLine($"Number of vowels: {counter}");
+
+
+
+
 
 
     }
