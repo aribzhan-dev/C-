@@ -2,6 +2,7 @@
 // Write, Edit and Run your C# code using C# Online Compiler
 
 using System;
+using System.IO.Compression;
 using System.Security.Cryptography;
 
 public class HelloWorld
@@ -327,24 +328,262 @@ public class HelloWorld
         // Console.WriteLine(numbers.Sum());
 
 
-        Console.WriteLine("Task 3");
-        Console.Write("Enter a string: ");
-        string str = Console.ReadLine();
-        Console.WriteLine($"Length of the string: {str.Length}");
-        Console.WriteLine(str.ToUpper());
-        int counter = 0;
-        for (int s = 0; s <= (str.Length)-1; s++)
-        {
-            if (str.ToLower()[s] == 'a' || str.ToLower()[s] == 'e' || str.ToLower()[s] == 'i' || str.ToLower()[s] == 'o' || str.ToLower()[s] == 'u' || str.ToLower()[s] == 'y')
-            {
-                counter++;
-            }
-        }
-        Console.WriteLine($"Number of vowels: {counter}");
+        // Console.WriteLine("Task 3");
+        // Console.Write("Enter a string: ");
+        // string str = Console.ReadLine();
+        // Console.WriteLine($"Length of the string: {str.Length}");
+        // Console.WriteLine(str.ToUpper());
+        // int counter = 0;
+        // for (int s = 0; s <= (str.Length)-1; s++)
+        // {
+        //     if (str.ToLower()[s] == 'a' || str.ToLower()[s] == 'e' || str.ToLower()[s] == 'i' || str.ToLower()[s] == 'o' || str.ToLower()[s] == 'u' || str.ToLower()[s] == 'y')
+        //     {
+        //         counter++;
+        //     }
+        // }
+        // Console.WriteLine($"Number of vowels: {counter}");
 
 
 
 
+
+        // 25.09.25 Practice
+        // Console.WriteLine("Task 1");
+        // string[] attendance = { "Present", "Absent", "Present", "Present", "Absent", "Present" };
+        // int present_counter = 0;
+        // int absent_counter = 0;
+        // foreach (string status in attendance)
+        // {
+        //     if (status == "Present")
+        //         present_counter++;
+        //     else
+        //         absent_counter++;
+        // }
+
+        // Console.WriteLine($"{present_counter} is present and {absent_counter} student is apsent");
+        // if (absent_counter > 3)
+        // {
+        //     Console.WriteLine("SO manu absents");
+        // }
+
+
+        // Console.WriteLine("Task 2");
+        // string[] menu = { "Plov", "Lagman", "Manty", "Log out" };
+        // Console.WriteLine("Menu:");
+        // for (int i = 0; i <= (menu.Length) - 1; i++)
+        // {
+        //     Console.WriteLine($"{i + 1}. {menu[i]}");
+
+        // }
+        // do
+        // {
+        //     Console.WriteLine("chose a number");
+        //     int choise = Convert.ToInt32(Console.ReadLine());
+        //     switch (choise)
+        //     {
+        //         case 1:
+        //             Console.WriteLine("You chose Plov");
+        //             break;
+        //         case 2:
+        //             Console.WriteLine("You chose Lagman");
+        //             break;
+        //         case 3:
+        //             Console.WriteLine("You chose Manty");
+        //             break;
+        //         case 4:
+        //             Console.WriteLine("Logging out...");
+        //             break;
+        //         default:
+        //             Console.WriteLine("Error");
+        //             break;
+        //     }
+        //     if (choise == 4)
+        //         break;
+        // }
+        // while (true);
+
+
+        // Console.WriteLine("Task 3");
+        // do
+        // {
+        //     Console.Write("enter a passwrod --->");
+        //     string password = Console.ReadLine();
+        //     if (password == "1234")
+        //     {
+        //         Console.WriteLine("Access granted");
+        //         break;
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("Access denied");
+        //     }
+        // }
+        // while (true);
+
+
+        // Console.WriteLine("Task 4");
+        // int[] marks = { 85, 92, 78, 90, 88 };
+        // int sum = 0;
+        // foreach (int mark in marks)
+        // {
+        //     sum += mark;
+        // }
+        // double average = (double)sum / marks.Length;
+        // if (average >= 90)
+        //     Console.WriteLine("Perfect");
+        // else if (average >= 70)
+        //     Console.WriteLine("Good");
+        // else if (average >= 50)
+        //     Console.WriteLine("Not bad");
+        // else
+        //     Console.WriteLine("You have a some problems");
+
+
+        // Random random = new Random();
+
+        // Console.WriteLine("Task 5");
+        // int number = random.Next(101);
+        // int counter = 0;
+        // while (true)
+        // {
+        //     Console.Write("Guess the number (0-100): ");
+        //     int guess = Convert.ToInt32(Console.ReadLine());
+        //     if (guess < number)
+        //     {
+        //         counter++;
+        //         Console.WriteLine("Too low");
+        //     }
+        //     else if (guess > number)
+        //     {
+        //         counter++;
+        //         Console.WriteLine("Too high");
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("Congratulations! You guessed the number.");
+        //         break;
+        //     }
+
+        // }
+        // Console.WriteLine($"You tried {counter} times");
+
+
+
+        // Console.WriteLine("Task 6");
+        // Console.Write("Enter a string: ");
+        // string str = Console.ReadLine();
+        // int n = 0;
+        // foreach (char c in str)
+        // {
+        //     if (c == 'a' || c == 'A')
+        //     {
+        //         n++;
+        //     }
+        // }
+        // if (n > 0)
+        //     Console.WriteLine($"The letter 'a' appears {n} times in the string.");
+        // else
+        //     Console.WriteLine("The letter 'a' does not appear in the string.");
+
+
+        // Console.WriteLine("Task 7");
+        // Console.WriteLine("Menu:");
+        // Console.WriteLine("1. Show balance");
+        // Console.WriteLine("2. Popolnit balance");
+        // Console.WriteLine("3. Withdraw money");
+        // Console.WriteLine("4. Exit");
+        // int balance = 1000;
+        // do
+        // {
+        //     Console.Write("Choose an option (1-4): ");
+        //     int option = Convert.ToInt32(Console.ReadLine());
+        //     switch (option)
+        //     {
+        //         case 1:
+        //             Console.WriteLine($"Your balance is: {balance}");
+        //             break;
+        //         case 2:
+        //             Console.Write("Enter amount to deposit: ");
+        //             int deposit = Convert.ToInt32(Console.ReadLine());
+        //             if (deposit > 0)
+        //             {
+        //                 balance += deposit;
+        //                 Console.WriteLine($"Deposited: {deposit}. New balance: {balance}");
+        //             }
+        //             else
+        //             {
+        //                 Console.WriteLine("Error: Deposit amount must be positive.");
+        //             }
+        //             break;
+        //         case 3:
+        //             Console.Write("Enter amount to withdraw: ");
+        //             int withdraw = Convert.ToInt32(Console.ReadLine());
+        //             if (withdraw > 0 && withdraw <= balance)
+        //             {
+        //                 balance -= withdraw;
+        //                 Console.WriteLine($"Withdrew: {withdraw}. New balance: {balance}");
+        //             }
+        //             else if (withdraw > balance)
+        //             {
+        //                 Console.WriteLine("Error: Insufficient funds.");
+        //             }
+        //             else
+        //             {
+        //                 Console.WriteLine("Error: Withdrawal amount must be positive.");
+        //             }
+        //             break;
+        //         case 4:
+        //             Console.WriteLine("Exiting...");
+        //             break;
+        //         default:
+        //             Console.WriteLine("Error: Invalid option.");
+        //             break;
+        //     }
+        //     if (option == 4)
+        //         break;
+
+        // }
+        // while (true);
+
+
+        // Console.WriteLine("Task 8");
+        // int even_counter = 0;
+        // int odd_counter = 0;
+        // int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        // for (int i = 0; i < numbers.Length; i++)
+        // {
+        //     if (numbers[i] % 2 == 0)
+        //     {
+        //         even_counter++;
+        //     }
+        //     else
+        //     {
+        //         odd_counter++;
+        //     }
+        // }
+        // Console.WriteLine($"Even numbers: {even_counter}, Odd numbers: {odd_counter}");
+
+
+
+        // Console.WriteLine("Task 9");
+        // for (int i = 1; i <= 9; i++)
+        // {
+        //     for (int j = 1; j <= 9; j++)
+        //     {
+        //         Console.Write($"{i} * {j} = {i * j}\t");
+        //     }
+        //     Console.WriteLine();
+        // }
+
+
+
+
+        // Console.WriteLine("Task 10");
+        // Console.WriteLine("Enter a string: ");
+        // string str = Console.ReadLine();
+        // string[] values = str.Split(' ');
+
+        // Console.WriteLine($" in this sentence we have --> {values.Length} words");
 
 
     }
