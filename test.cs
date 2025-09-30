@@ -7,6 +7,190 @@ using System.Security.Cryptography;
 
 public class HelloWorld
 {
+
+    public static string Hello()
+    {
+        return $"Hello, I'm learning C#!";
+    }
+
+    public static string Greet(string name)
+    {
+        return $"Hello, {name}!";
+    }
+
+    public static int Sum(int a, int b)
+    {
+        return a * b;
+    }
+
+    public static int Increment(ref int a)
+    {
+        a++;
+        return a;
+    }
+
+
+    public static int Devide(int c, int d, out int result)
+    {
+        result = c / d;
+        return result;
+    }
+
+
+
+
+    // 30.09.25 Practice
+
+    public static string GreetGroup(string[] names)
+    {
+        foreach (string name in names)
+        {
+            Console.WriteLine($"Hello, {name}!");
+        }
+        return "";
+    }
+
+
+    public static int Avarage(int[] numbers)
+    {
+        int sum = 0;
+        foreach (int number in numbers)
+        {
+            sum += number;
+        }
+        return sum / numbers.Length;
+    }
+
+
+    public static int FindMaxMin(int[] numbers2, out int min)
+    {
+        int max = numbers2[0];
+        min = numbers2[0];
+        foreach (int number in numbers2)
+        {
+            if (number > max)
+            {
+                max = number;
+            }
+            if (number < min)
+            {
+                min = number;
+            }
+        }
+        return max;
+    }
+
+
+    public static string CheckPassword(string password, string correctPassword)
+    {
+        if (password == correctPassword)
+        {
+            return "Access granted";
+        }
+        else
+        {
+            return "Access denied";
+        }
+    }
+
+
+    public static int CountVovels(string str)
+    {
+        int counter = 0;
+        for (int s = 0; s <= (str.Length) - 1; s++)
+        {
+            if (str.ToLower()[s] == 'a' || str.ToLower()[s] == 'e' || str.ToLower()[s] == 'i' || str.ToLower()[s] == 'o' || str.ToLower()[s] == 'u' || str.ToLower()[s] == 'y')
+            {
+                counter++;
+            }
+        }
+        return counter;
+    }
+
+
+    public static int Factorial(int n)
+    {
+        if (n == 0 || n == 1)
+            return 1;
+        else
+            return n * Factorial(n - 1);
+    }
+
+
+    public static int Add(int a, int b)
+    {
+        return a + b;
+    }
+    public static int Subtract(int a, int b)
+    {
+        return a - b;
+    }
+    public static int Multiply(int a, int b)
+    {
+        return a * b;
+    }
+
+    public static double Divide(int a, int b, out double result)
+    {
+        if (b != 0)
+        {
+            result = (double)a / b;
+            return result;
+        }
+        else
+        {
+            result = 0;
+            Console.WriteLine("Error: Division by zero");
+            return result;
+        }
+    }
+
+
+
+    public static void IncreaseArray(ref int[] arr)
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            arr[i] = arr[i] + 1;
+        }
+        Console.WriteLine($"New array: [{string.Join(", ", arr)}]");
+    }
+
+
+    public static void Analyze(string text, out int letters, out int digits, out int spaces)
+    {
+        letters = 0;
+        digits = 0;
+        spaces = 0;
+        foreach (char c in text)
+        {
+            if (char.IsLetter(c))
+                letters++;
+            else if (char.IsDigit(c))
+                digits++;
+            else if (char.IsWhiteSpace(c))
+                spaces++;
+        }
+        Console.WriteLine($"Letters: {letters}, Digits: {digits}, Spaces: {spaces}");
+    }
+
+
+    public static void PrintTable(int n)
+    {
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{n} * {i} = {n * i}");
+        }
+    }
+
+
+
+
+
+
+
+
+
     public static void Main(string[] args)
     {
         // Console.WriteLine("task 1");
@@ -584,6 +768,148 @@ public class HelloWorld
         // string[] values = str.Split(' ');
 
         // Console.WriteLine($" in this sentence we have --> {values.Length} words");
+
+
+
+        // 26.09.25
+        // Console.WriteLine("Task 1");
+        // static string Hello(string name)
+        // {
+        //     return $"Hello, {name}!";
+        // }
+        // Console.Write("Enter your name: ");
+        // string name = Console.ReadLine();
+        // Console.WriteLine(Hello(name));
+
+        // Console.WriteLine("Task 1");
+        // Console.WriteLine(Hello());
+
+
+        // Console.WriteLine("Task 2");
+        // Console.WriteLine("Enter yout name -- >");
+        // string name = Console.ReadLine();
+        // Console.WriteLine(Greet(name));
+
+
+        // Console.WriteLine("Task 3");
+        // Console.WriteLine("Enter a number -->");
+        // int a = Convert.ToInt32(Console.ReadLine());
+        // Console.WriteLine("Enter a number -->");
+        // int b = Convert.ToInt32(Console.ReadLine());
+        // Console.WriteLine($"Sum = {Sum(a, b)}");
+
+
+        // Console.WriteLine("Task 4");
+        // Console.WriteLine("Enter a number to increment -->");
+        // int n = Convert.ToInt32(Console.ReadLine());
+        // Console.WriteLine($"Incremented value = {Increment(ref n)}");
+
+
+        // Console.WriteLine("Task 5");
+        // Console.WriteLine("Enter a number -->");
+        // int c = Convert.ToInt32(Console.ReadLine());
+        // Console.WriteLine("Enter a number -->");
+        // int d = Convert.ToInt32(Console.ReadLine());
+        // Console.WriteLine($"Devide = {Devide(c, d, out int result)}");
+
+
+
+
+
+        // 30.09.25 Practice
+        Console.WriteLine("Task 1");
+        string[] names = { "Aribzhan", "Azamat", "Sanzhar" };
+        GreetGroup(names);
+
+        Console.WriteLine("Task 2");
+        int[] numbers = { 10, 20, 30, 40, 50 };
+        Console.WriteLine($"Avarage = {Avarage(numbers)}");
+
+        Console.WriteLine("Task 3");
+        int[] numbers2 = { 5, 2, 9, 1, 7 };
+        Console.WriteLine($"Max = {FindMaxMin(numbers2, out int min)} and Min = {min}");
+
+
+        Console.WriteLine("Task 4");
+        Console.Write("Enter a correck password -->");
+        string correctPassword = Console.ReadLine();
+        Console.Write("Enter a password -->");
+        string password = Console.ReadLine();
+        Console.WriteLine(CheckPassword(password, correctPassword));
+
+
+        Console.WriteLine("task 5");
+        Console.Write("Enter a string -->");
+        string str = Console.ReadLine();
+        Console.WriteLine($"In this string we have {CountVovels(str)} vovels");
+
+
+        Console.WriteLine("task 6");
+        Console.Write("Enter a number -->");
+        int n = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine($"Factorial of {n} is {Factorial(n)}");
+
+        Console.WriteLine("task 7");
+        Console.Write("Enter a number -->");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter a number -->");
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter an operation (+, -, *, /) -->");
+        string operation = Console.ReadLine();
+        switch (operation)
+        {
+            case "+":
+                Console.WriteLine($"Result: {Add(a, b)}");
+                break;
+            case "-":
+                Console.WriteLine($"Result: {Subtract(a, b)}");
+                break;
+            case "*":
+                Console.WriteLine($"Result: {Multiply(a, b)}");
+                break;
+            case "/":
+                Console.WriteLine($"Result: {Divide(a, b, out double result)}");
+                break;
+            default:
+                Console.WriteLine("Error: Invalid operation");
+                break;
+        }
+        ;
+
+
+        Console.WriteLine("task 8");
+        int[] arr = { 1, 2, 3, 4, 5 };
+        IncreaseArray(ref arr);
+
+
+        Console.WriteLine("task 9");
+        Console.Write("Enter a string -->");
+        string text = Console.ReadLine();
+        Analyze(text, out int letters, out int digits, out int spaces);
+
+
+        Console.WriteLine("task 10");
+        Console.Write("Enter a number -->");
+        int number = Convert.ToInt32(Console.ReadLine());
+        PrintTable(number);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
