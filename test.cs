@@ -184,6 +184,20 @@ public class HelloWorld
     }
 
 
+    public static string Vovel(string user_text)
+    {
+        int counter = 0;
+        foreach (char c in user_text.ToLower())
+        {
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'u' || c == 'y' || c == 'o')
+            {
+                counter++;
+            }
+        }
+        return $"in {user_text} we have {counter} vovels";
+    }
+
+
 
 
 
@@ -817,81 +831,87 @@ public class HelloWorld
 
 
         // 30.09.25 Practice
-        Console.WriteLine("Task 1");
-        string[] names = { "Aribzhan", "Azamat", "Sanzhar" };
-        GreetGroup(names);
+        // Console.WriteLine("Task 1");
+        // string[] names = { "Aribzhan", "Azamat", "Sanzhar" };
+        // GreetGroup(names);
 
-        Console.WriteLine("Task 2");
-        int[] numbers = { 10, 20, 30, 40, 50 };
-        Console.WriteLine($"Avarage = {Avarage(numbers)}");
+        // Console.WriteLine("Task 2");
+        // int[] numbers = { 10, 20, 30, 40, 50 };
+        // Console.WriteLine($"Avarage = {Avarage(numbers)}");
 
-        Console.WriteLine("Task 3");
-        int[] numbers2 = { 5, 2, 9, 1, 7 };
-        Console.WriteLine($"Max = {FindMaxMin(numbers2, out int min)} and Min = {min}");
-
-
-        Console.WriteLine("Task 4");
-        Console.Write("Enter a correck password -->");
-        string correctPassword = Console.ReadLine();
-        Console.Write("Enter a password -->");
-        string password = Console.ReadLine();
-        Console.WriteLine(CheckPassword(password, correctPassword));
+        // Console.WriteLine("Task 3");
+        // int[] numbers2 = { 5, 2, 9, 1, 7 };
+        // Console.WriteLine($"Max = {FindMaxMin(numbers2, out int min)} and Min = {min}");
 
 
-        Console.WriteLine("task 5");
-        Console.Write("Enter a string -->");
-        string str = Console.ReadLine();
-        Console.WriteLine($"In this string we have {CountVovels(str)} vovels");
+        // Console.WriteLine("Task 4");
+        // Console.Write("Enter a correck password -->");
+        // string correctPassword = Console.ReadLine();
+        // Console.Write("Enter a password -->");
+        // string password = Console.ReadLine();
+        // Console.WriteLine(CheckPassword(password, correctPassword));
 
 
-        Console.WriteLine("task 6");
-        Console.Write("Enter a number -->");
-        int n = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine($"Factorial of {n} is {Factorial(n)}");
-
-        Console.WriteLine("task 7");
-        Console.Write("Enter a number -->");
-        int a = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Enter a number -->");
-        int b = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Enter an operation (+, -, *, /) -->");
-        string operation = Console.ReadLine();
-        switch (operation)
-        {
-            case "+":
-                Console.WriteLine($"Result: {Add(a, b)}");
-                break;
-            case "-":
-                Console.WriteLine($"Result: {Subtract(a, b)}");
-                break;
-            case "*":
-                Console.WriteLine($"Result: {Multiply(a, b)}");
-                break;
-            case "/":
-                Console.WriteLine($"Result: {Divide(a, b, out double result)}");
-                break;
-            default:
-                Console.WriteLine("Error: Invalid operation");
-                break;
-        }
-        ;
+        // Console.WriteLine("task 5");
+        // Console.Write("Enter a string -->");
+        // string str = Console.ReadLine();
+        // Console.WriteLine($"In this string we have {CountVovels(str)} vovels");
 
 
-        Console.WriteLine("task 8");
-        int[] arr = { 1, 2, 3, 4, 5 };
-        IncreaseArray(ref arr);
+        // Console.WriteLine("task 6");
+        // Console.Write("Enter a number -->");
+        // int n = Convert.ToInt32(Console.ReadLine());
+        // Console.WriteLine($"Factorial of {n} is {Factorial(n)}");
+
+        // Console.WriteLine("task 7");
+        // Console.Write("Enter a number -->");
+        // int a = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Enter a number -->");
+        // int b = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Enter an operation (+, -, *, /) -->");
+        // string operation = Console.ReadLine();
+        // switch (operation)
+        // {
+        //     case "+":
+        //         Console.WriteLine($"Result: {Add(a, b)}");
+        //         break;
+        //     case "-":
+        //         Console.WriteLine($"Result: {Subtract(a, b)}");
+        //         break;
+        //     case "*":
+        //         Console.WriteLine($"Result: {Multiply(a, b)}");
+        //         break;
+        //     case "/":
+        //         Console.WriteLine($"Result: {Divide(a, b, out double result)}");
+        //         break;
+        //     default:
+        //         Console.WriteLine("Error: Invalid operation");
+        //         break;
+        // }
+        // ;
 
 
-        Console.WriteLine("task 9");
-        Console.Write("Enter a string -->");
-        string text = Console.ReadLine();
-        Analyze(text, out int letters, out int digits, out int spaces);
+        // Console.WriteLine("task 8");
+        // int[] arr = { 1, 2, 3, 4, 5 };
+        // IncreaseArray(ref arr);
 
 
-        Console.WriteLine("task 10");
-        Console.Write("Enter a number -->");
-        int number = Convert.ToInt32(Console.ReadLine());
-        PrintTable(number);
+        // Console.WriteLine("task 9");
+        // Console.Write("Enter a string -->");
+        // string text = Console.ReadLine();
+        // Analyze(text, out int letters, out int digits, out int spaces);
+
+
+        // Console.WriteLine("task 10");
+        // Console.Write("Enter a number -->");
+        // int number = Convert.ToInt32(Console.ReadLine());
+        // PrintTable(number);
+
+
+        Console.Write("Practice");
+        Console.WriteLine("enter a text -- >>");
+        string user_text = Console.ReadLine();
+        Console.WriteLine(Vovel(user_text));
 
 
 
