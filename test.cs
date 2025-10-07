@@ -2,6 +2,7 @@
 // Write, Edit and Run your C# code using C# Online Compiler
 
 using System;
+using System.Collections;
 using System.IO.Compression;
 using System.Security.Cryptography;
 
@@ -908,10 +909,133 @@ public class HelloWorld
         // PrintTable(number);
 
 
-        Console.Write("Practice");
-        Console.WriteLine("enter a text -- >>");
-        string user_text = Console.ReadLine();
-        Console.WriteLine(Vovel(user_text));
+        // Console.Write("Practice");
+        // Console.WriteLine("enter a text -- >>");
+        // string user_text = Console.ReadLine();
+        // Console.WriteLine(Vovel(user_text));
+
+
+
+        // Practise 8, 9 work 07.10.25
+
+        // Console.WriteLine("Task 1");
+        // Console.Write("Enter a text -->");
+        // string user_text = Console.ReadLine();
+        // File.WriteAllText("user_message.txt", user_text);
+        // Console.WriteLine("Text saved to user_message.txt");
+        // Console.WriteLine(File.ReadAllText("user_message.txt"));
+
+
+
+        // Console.WriteLine("Task 2");
+        // Console.Write("Enter a how manu products you want to buy -->");
+        // int n = Convert.ToInt32(Console.ReadLine());
+        // for (int i = 1; i <= n; i++)
+        // {
+        //     Console.Write($"Enter a product name -->");
+        //     string product_name = Console.ReadLine();
+        //     File.AppendAllText("products.txt", $"{i}) {product_name + '\n'}");
+        // }
+        // string[] product = File.ReadAllLines("products.txt");
+        // foreach (string p in product)
+        // {
+        //     Console.WriteLine(p);
+        // }  
+
+
+        // Console.WriteLine("Task 3");
+        // Console.WriteLine("1. New notes");
+        // Console.WriteLine("2. Show all notes");
+        // Console.WriteLine("3. Exit");
+        // while (true)
+        // {
+        //     Console.Write("Chose one of the options:");
+        //     int question = Convert.ToInt32(Console.ReadLine());
+        //     switch (question)
+        //     {
+        //         case 1:
+        //             Console.Write("Enter a note -->");
+        //             string note = Console.ReadLine();
+        //             File.AppendAllText("notes.txt", $"{note + '\n'}");
+        //             break;
+        //         case 2:
+        //             string[] notes = File.ReadAllLines("notes.txt");
+        //             foreach (string n in notes)
+        //             {
+        //                 Console.WriteLine(n);
+        //             }
+        //             break;
+        //         case 3:
+        //             Console.WriteLine("Exiting...");
+        //             break;
+        //         default:
+        //             Console.WriteLine("Error");
+        //             break;
+        //     }
+        //     if (question == 3)
+        //         break;
+
+        // }
+
+
+        // Console.WriteLine("Task 4");
+        // string[] line = File.ReadAllLines("products.txt");
+        // int len = line.Length;
+        // if (len == 0)
+        // {
+        //     Console.WriteLine("File is empty");
+        // }
+        // else
+        // {
+        //     Console.WriteLine(len);
+        // }
+
+
+
+
+        // Console.WriteLine("task 5");
+        // Console.Write("enter wich file you want to copu -->");
+        // string file_name = Console.ReadLine();
+        // bool file = File.Exists($"{file_name}");
+        // if (file == true)
+        // {
+        //     File.Copy($"{file_name}", "new_user.txt", true);
+        //     Console.WriteLine("Succesfulli copied");
+        // }
+        // else
+        // {
+        //     Console.WriteLine("nothing to copy");
+        // }
+        // Console.WriteLine(File.ReadAllText("new_user.txt"));
+
+
+
+        // Console.WriteLine("Task 6");
+        // Console.Write("enter wich file you want to copu -->");
+        // string file_name = Console.ReadLine();
+        // try
+        // {
+        //     Console.WriteLine(File.ReadAllText(file_name));
+        // }
+        // catch (FileNotFoundException ex)
+        // {
+        //     Console.WriteLine($"{file_name} :   {ex.Message}");
+        // }
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
 
 
 
