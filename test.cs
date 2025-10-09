@@ -1024,8 +1024,122 @@ public class HelloWorld
 
 
 
-        
-        
+        // Console.WriteLine("Task 7");
+        // Console.Write("Enter a number -->");
+        // string n = Console.ReadLine();
+        // Console.Write("Enter a number -->");
+        // string m = Console.ReadLine();
+        // try
+        // {
+        //     int parsed_n = int.Parse(n);
+        //     int parsed_m = int.Parse(m);
+        //     Console.WriteLine($"{parsed_n} / {parsed_m} = {parsed_n / parsed_m}");
+        //     Console.WriteLine($"{parsed_m} / {parsed_n} = {parsed_m / parsed_n}");
+        // }
+        // catch (DivideByZeroException ex)
+        // {
+        //     Console.WriteLine($"Error: Division by zero is not allowed. {ex.Message}");
+        // }
+        // catch (FormatException ex)
+        // {
+        //     Console.WriteLine($"Error: Invalid input format. {ex.Message}");
+        // }
+
+
+        // Console.WriteLine("Task 8");
+        // Console.Write("Enter a number -->");
+        // string n = Console.ReadLine();
+        // Console.Write("Enter a number -->");
+        // string m = Console.ReadLine();
+        // Console.Write("Enter an operation (+, -, *, /) -->");
+        // char operation = Console.ReadLine()[0];
+        // try
+        // {
+        //     int parsed_n = int.Parse(n);
+        //     int parsed_m = int.Parse(m);
+        //     switch (operation)
+        //     {
+        //         case '+':
+        //             Console.WriteLine($"{parsed_n} + {parsed_m} = {parsed_n + parsed_m}");
+        //             break;
+        //         case '-':
+        //             Console.WriteLine($"{parsed_n} - {parsed_m} = {parsed_n - parsed_m}");
+        //             break;
+        //         case '*':
+        //             Console.WriteLine($"{parsed_n} * {parsed_m} = {parsed_n * parsed_m}");
+        //             break;
+        //         case '/':
+        //             Console.WriteLine($"{parsed_n} / {parsed_m} = {parsed_n / parsed_m}");
+        //             Console.WriteLine($"{parsed_m} / {parsed_n} = {parsed_m / parsed_n}");
+        //             break;
+        //         default:
+        //             Console.WriteLine("Error: Invalid operation.");
+        //             break;
+        //     }
+
+        // }
+        // catch (DivideByZeroException ex)
+        // {
+        //     Console.WriteLine($"Error: Division by zero is not allowed. {ex.Message}");
+        // }
+        // catch (FormatException ex)
+        // {
+        //     Console.WriteLine($"Error: Invalid input format. {ex.Message}");
+        // }
+
+
+        // Console.WriteLine("Task 9");
+        // Console.Write("Enter a file name -->");
+        // string file_name = Console.ReadLine();
+        // try
+        // {
+        //     if (!File.Exists(file_name))
+        //     {
+        //         File.WriteAllText(file_name, "");
+        //         Console.WriteLine($"File '{file_name}' created.");
+        //     }
+        //     string content = File.ReadAllText(file_name);
+        //     Console.WriteLine(content);
+        // }
+        // catch (FileNotFoundException ex)
+        // {
+        //     Console.WriteLine($"Error: The file '{file_name}' was not found. {ex.Message}");
+        // }
+        // catch (UnauthorizedAccessException ex)
+        // {
+        //     Console.WriteLine($"Error: You do not have permission to access the file '{file_name}'. {ex.Message}");
+        // }
+        // catch (Exception ex)
+        // {
+        //     Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+        // }
+
+
+        // Console.WriteLine("Task 10");
+        // try
+        // {
+        //     if (!File.Exists("log.txt"))
+        //     {
+        //         File.WriteAllText("log.txt", $"[{DateTime.Now}] Log file created.\n");
+        //         Console.WriteLine("File 'log.txt' created.");
+        //     }
+        //     else
+        //     {
+        //         File.AppendAllText("log.txt", $"[{DateTime.Now}] Log file accessed.\n");
+        //         Console.WriteLine("Log entry added to 'log.txt'.");
+        //     }
+        // }
+        // catch (Exception ex)
+        // {
+        //     Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+        // }
+
+
+        // Console.WriteLine(File.ReadAllText("log.txt"));
+
+
+
+
 
 
 
