@@ -1141,6 +1141,23 @@ public class HelloWorld
 
 
 
+        // Practise task
+        // Console.Write("Enter a file name -->");
+        // string file_name = Console.ReadLine();
+        // if (File.Exists($"{file_name}"))
+        // {
+        //     Console.WriteLine($"{file_name} this file already exist");
+        // }
+        // else
+        // {
+        //     File.WriteAllText($"{file_name}", "Welcome");
+        //     Console.WriteLine($"{file_name} successfulli created");
+        // }
+
+
+
+
+
 
 
 
