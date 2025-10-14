@@ -223,6 +223,22 @@ namespace Name
             return $"in {user_text} we have {counter} vovels";
         }
 
+        public struct Students
+        {
+            public string Name;
+            public int Age;
+            public int Grade;
+
+            public Students(string Name, int Age, int Grade)
+            {
+                this.Name = Name;
+                this.Age = Age;
+                this.Grade = Grade;
+            }
+
+
+        }
+
 
 
 
@@ -1285,6 +1301,66 @@ namespace Name
 
 
 
+            // Console.WriteLine("Task 6");
+            // Students student = new Students("Aribzhan", 17, 11);
+            // Console.WriteLine($"Student name: {student.Name}, Age: {student.Age}, Grade: {student.Grade}");
+
+
+
+            // Console.WriteLine("Task 7");
+            // Students student1 = new Students("Aribzhan", 17, 11);
+            // Students student2 = new Students("Azamat", 18, 12);
+            // Students student3 = new Students("Sanzhar", 16, 10);
+            // List<Students> students = new List<Students> { student1, student2, student3 };
+            // foreach (Students s in students)
+            // {
+            //     Console.WriteLine($"Student name: {s.Name}, Age: {s.Age}, Grade: {s.Grade}");
+            // }
+
+
+            // Console.WriteLine("Task 8");
+            // Console.WriteLine(DateTime.Now);
+            // Console.WriteLine(DateOnly.FromDateTime(DateTime.Now));
+            // Console.WriteLine(TimeOnly.FromDateTime(DateTime.Now));
+
+
+            // Console.WriteLine("Task 9");
+            // DateOnly TodaysDate = DateOnly.FromDateTime(DateTime.Now);
+            // if (TodaysDate.Month == 1 && TodaysDate.Day == 1)
+            // {
+            //     Console.WriteLine("Happy New Year!");
+            // }
+            // else if (TodaysDate.Month == 12 && TodaysDate.Day == 25)
+            // {
+            //     Console.WriteLine("Merry Christmas!");
+            // }
+            // else
+            // {
+            //     int date = 12 - TodaysDate.Month;
+            //     if (date > 0)
+            //     {
+            //         Console.WriteLine($"{date * 30} around days  until New Year");
+            //     }
+            //     else
+            //     {
+            //         Console.WriteLine($"{(date*(-1))*30} around days  until New Year");
+            //     }
+
+            // }
+
+
+
+            // Console.WriteLine("Task 10");
+            // Console.Write("Enter your birth year -->");
+            // int birth_year = Convert.ToInt32(Console.ReadLine());
+            // DateOnly how_old = DateOnly.FromDateTime(DateTime.Now);
+            // int age = how_old.Year - birth_year;
+            // Console.WriteLine($"You are {age} years old");
+            
+            
+
+
+
 
 
 
@@ -1324,25 +1400,8 @@ namespace Name
     }
 }
 
-public struct Students
-{
-    public string Name;
-    public int Age;
-    public int Grade;
 
-    public Students(string Name, int Age, int Grade)
-    {
-        this.Name = Name;
-        this.Age = Age;
-        this.Grade = Grade;
-    }
 
-    public void Display()
-    {
-        Students student = new Students("Aribzhan", 17, 11);
-        Console.WriteLine($"Student name: {student.Name}, Age: {student.Age}, Grade: {student.Grade}");
-    }
-}
 
 
 
