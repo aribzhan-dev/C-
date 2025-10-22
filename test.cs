@@ -8,16 +8,21 @@ using System.Security.Cryptography;
 
 namespace Name
 {
-    enum Day
-    {
-        Monday,
-        Tuesday,
-        Wednesday,
-        Thursday,
-        Friday,
-        Saturday,
-        Sunday
-    }
+    // enum Day
+    // {
+    //     Monday,
+    //     Tuesday,
+    //     Wednesday,
+    //     Thursday,
+    //     Friday,
+    //     Saturday,
+    //     Sunday
+    // }
+
+
+
+
+    
 
 
 
@@ -34,208 +39,227 @@ namespace Name
     public class HelloWorld
     {
 
-        public static string Hello()
+        // public static string Hello()
+        // {
+        //     return $"Hello, I'm learning C#!";
+        // }
+
+        // public static string Greet(string name)
+        // {
+        //     return $"Hello, {name}!";
+        // }
+
+        // public static int Sum(int a, int b)
+        // {
+        //     return a * b;
+        // }
+
+        // public static int Increment(ref int a)
+        // {
+        //     a++;
+        //     return a;
+        // }
+
+
+        // public static int Devide(int c, int d, out int result)
+        // {
+        //     result = c / d;
+        //     return result;
+        // }
+
+
+
+
+        // // 30.09.25 Practice
+
+        // public static string GreetGroup(string[] names)
+        // {
+        //     foreach (string name in names)
+        //     {
+        //         Console.WriteLine($"Hello, {name}!");
+        //     }
+        //     return "";
+        // }
+
+
+        // public static int Avarage(int[] numbers)
+        // {
+        //     int sum = 0;
+        //     foreach (int number in numbers)
+        //     {
+        //         sum += number;
+        //     }
+        //     return sum / numbers.Length;
+        // }
+
+
+        // public static int FindMaxMin(int[] numbers2, out int min)
+        // {
+        //     int max = numbers2[0];
+        //     min = numbers2[0];
+        //     foreach (int number in numbers2)
+        //     {
+        //         if (number > max)
+        //         {
+        //             max = number;
+        //         }
+        //         if (number < min)
+        //         {
+        //             min = number;
+        //         }
+        //     }
+        //     return max;
+        // }
+
+
+        // public static string CheckPassword(string password, string correctPassword)
+        // {
+        //     if (password == correctPassword)
+        //     {
+        //         return "Access granted";
+        //     }
+        //     else
+        //     {
+        //         return "Access denied";
+        //     }
+        // }
+
+
+        // public static int CountVovels(string str)
+        // {
+        //     int counter = 0;
+        //     for (int s = 0; s <= (str.Length) - 1; s++)
+        //     {
+        //         if (str.ToLower()[s] == 'a' || str.ToLower()[s] == 'e' || str.ToLower()[s] == 'i' || str.ToLower()[s] == 'o' || str.ToLower()[s] == 'u' || str.ToLower()[s] == 'y')
+        //         {
+        //             counter++;
+        //         }
+        //     }
+        //     return counter;
+        // }
+
+
+        // public static int Factorial(int n)
+        // {
+        //     if (n == 0 || n == 1)
+        //         return 1;
+        //     else
+        //         return n * Factorial(n - 1);
+        // }
+
+
+        // public static int Add(int a, int b)
+        // {
+        //     return a + b;
+        // }
+        // public static int Subtract(int a, int b)
+        // {
+        //     return a - b;
+        // }
+        // public static int Multiply(int a, int b)
+        // {
+        //     return a * b;
+        // }
+
+        // public static double Divide(int a, int b, out double result)
+        // {
+        //     if (b != 0)
+        //     {
+        //         result = (double)a / b;
+        //         return result;
+        //     }
+        //     else
+        //     {
+        //         result = 0;
+        //         Console.WriteLine("Error: Division by zero");
+        //         return result;
+        //     }
+        // }
+
+
+
+        // public static void IncreaseArray(ref int[] arr)
+        // {
+        //     for (int i = 0; i < arr.Length; i++)
+        //     {
+        //         arr[i] = arr[i] + 1;
+        //     }
+        //     Console.WriteLine($"New array: [{string.Join(", ", arr)}]");
+        // }
+
+
+        // public static void Analyze(string text, out int letters, out int digits, out int spaces)
+        // {
+        //     letters = 0;
+        //     digits = 0;
+        //     spaces = 0;
+        //     foreach (char c in text)
+        //     {
+        //         if (char.IsLetter(c))
+        //             letters++;
+        //         else if (char.IsDigit(c))
+        //             digits++;
+        //         else if (char.IsWhiteSpace(c))
+        //             spaces++;
+        //     }
+        //     Console.WriteLine($"Letters: {letters}, Digits: {digits}, Spaces: {spaces}");
+        // }
+
+
+        // public static void PrintTable(int n)
+        // {
+        //     for (int i = 1; i <= 10; i++)
+        //     {
+        //         Console.WriteLine($"{n} * {i} = {n * i}");
+        //     }
+        // }
+
+
+        // public static string Vovel(string user_text)
+        // {
+        //     int counter = 0;
+        //     foreach (char c in user_text.ToLower())
+        //     {
+        //         if (c == 'a' || c == 'e' || c == 'i' || c == 'u' || c == 'y' || c == 'o')
+        //         {
+        //             counter++;
+        //         }
+        //     }
+        //     return $"in {user_text} we have {counter} vovels";
+        // }
+
+        // public struct Students
+        // {
+        //     public string Name;
+        //     public int Age;
+        //     public int Grade;
+
+        //     public Students(string Name, int Age, int Grade)
+        //     {
+        //         this.Name = Name;
+        //         this.Age = Age;
+        //         this.Grade = Grade;
+        //     }
+
+
+        // }
+        class Students
         {
-            return $"Hello, I'm learning C#!";
-        }
+            public string name;
+            public string group;
+            public int grade;
 
-        public static string Greet(string name)
-        {
-            return $"Hello, {name}!";
-        }
-
-        public static int Sum(int a, int b)
-        {
-            return a * b;
-        }
-
-        public static int Increment(ref int a)
-        {
-            a++;
-            return a;
-        }
-
-
-        public static int Devide(int c, int d, out int result)
-        {
-            result = c / d;
-            return result;
-        }
-
-
-
-
-        // 30.09.25 Practice
-
-        public static string GreetGroup(string[] names)
-        {
-            foreach (string name in names)
+            public Students(string name, string group, int grade)
             {
-                Console.WriteLine($"Hello, {name}!");
+                this.name = name;
+                this.group = group;
+                this.grade = grade;
             }
-            return "";
-        }
-
-
-        public static int Avarage(int[] numbers)
-        {
-            int sum = 0;
-            foreach (int number in numbers)
+q
+            public void ShowInfo()
             {
-                sum += number;
+                Console.WriteLine($"Name: {name}, Group: {group}, Grade: {grade}");
             }
-            return sum / numbers.Length;
-        }
-
-
-        public static int FindMaxMin(int[] numbers2, out int min)
-        {
-            int max = numbers2[0];
-            min = numbers2[0];
-            foreach (int number in numbers2)
-            {
-                if (number > max)
-                {
-                    max = number;
-                }
-                if (number < min)
-                {
-                    min = number;
-                }
-            }
-            return max;
-        }
-
-
-        public static string CheckPassword(string password, string correctPassword)
-        {
-            if (password == correctPassword)
-            {
-                return "Access granted";
-            }
-            else
-            {
-                return "Access denied";
-            }
-        }
-
-
-        public static int CountVovels(string str)
-        {
-            int counter = 0;
-            for (int s = 0; s <= (str.Length) - 1; s++)
-            {
-                if (str.ToLower()[s] == 'a' || str.ToLower()[s] == 'e' || str.ToLower()[s] == 'i' || str.ToLower()[s] == 'o' || str.ToLower()[s] == 'u' || str.ToLower()[s] == 'y')
-                {
-                    counter++;
-                }
-            }
-            return counter;
-        }
-
-
-        public static int Factorial(int n)
-        {
-            if (n == 0 || n == 1)
-                return 1;
-            else
-                return n * Factorial(n - 1);
-        }
-
-
-        public static int Add(int a, int b)
-        {
-            return a + b;
-        }
-        public static int Subtract(int a, int b)
-        {
-            return a - b;
-        }
-        public static int Multiply(int a, int b)
-        {
-            return a * b;
-        }
-
-        public static double Divide(int a, int b, out double result)
-        {
-            if (b != 0)
-            {
-                result = (double)a / b;
-                return result;
-            }
-            else
-            {
-                result = 0;
-                Console.WriteLine("Error: Division by zero");
-                return result;
-            }
-        }
-
-
-
-        public static void IncreaseArray(ref int[] arr)
-        {
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = arr[i] + 1;
-            }
-            Console.WriteLine($"New array: [{string.Join(", ", arr)}]");
-        }
-
-
-        public static void Analyze(string text, out int letters, out int digits, out int spaces)
-        {
-            letters = 0;
-            digits = 0;
-            spaces = 0;
-            foreach (char c in text)
-            {
-                if (char.IsLetter(c))
-                    letters++;
-                else if (char.IsDigit(c))
-                    digits++;
-                else if (char.IsWhiteSpace(c))
-                    spaces++;
-            }
-            Console.WriteLine($"Letters: {letters}, Digits: {digits}, Spaces: {spaces}");
-        }
-
-
-        public static void PrintTable(int n)
-        {
-            for (int i = 1; i <= 10; i++)
-            {
-                Console.WriteLine($"{n} * {i} = {n * i}");
-            }
-        }
-
-
-        public static string Vovel(string user_text)
-        {
-            int counter = 0;
-            foreach (char c in user_text.ToLower())
-            {
-                if (c == 'a' || c == 'e' || c == 'i' || c == 'u' || c == 'y' || c == 'o')
-                {
-                    counter++;
-                }
-            }
-            return $"in {user_text} we have {counter} vovels";
-        }
-
-        public struct Students
-        {
-            public string Name;
-            public int Age;
-            public int Grade;
-
-            public Students(string Name, int Age, int Grade)
-            {
-                this.Name = Name;
-                this.Age = Age;
-                this.Grade = Grade;
-            }
-
 
         }
 
@@ -1356,12 +1380,20 @@ namespace Name
             // DateOnly how_old = DateOnly.FromDateTime(DateTime.Now);
             // int age = how_old.Year - birth_year;
             // Console.WriteLine($"You are {age} years old");
-            
-            
 
 
 
+            // Practic task 13  date 21.10.25
 
+            // Students student1 = new Students();
+            // student1.name = "Aribzhan";
+            // student1.group = "CS101";
+            // student1.grade = 90;
+            // Students student2 = new Students();
+            // student2.name = "Azamat";
+            // student2.group = "CS102";
+            // student2.grade = 85;
+            // Students.ShowInfo(student1);
 
 
 
@@ -1399,6 +1431,13 @@ namespace Name
         }
     }
 }
+
+
+
+
+
+
+
 
 
 
