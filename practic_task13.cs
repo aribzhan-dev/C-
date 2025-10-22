@@ -71,3 +71,128 @@
 //         Console.WriteLine(car2.StartEngine());
 //     }
 // }
+
+
+
+
+
+// // task 3
+// using System;
+// class Games
+// {
+//     public string title;
+//     public string genre;
+//     public double rating;
+    
+//     public Games(string title,string genre, double rating)
+//     {
+//         this.title = title;
+//         this.genre = genre;
+//         this.rating = rating;
+//     }
+    
+    
+//     public string Play()
+//     {
+//         return $"Your are palying game {title} and genre of this game is {genre}";
+//     }
+// }
+
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Games game1 = new Games("FIFA 2026", "foodball", 5.0);
+        
+//         Console.WriteLine(game1.Play());
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+// // task 4
+// using System;
+// class Lamp
+// {
+//     public bool isOn;
+
+//     public void TurnOn()
+//     {
+//         isOn = true;
+//     }
+
+//     public void TurnOff()
+//     {
+//         isOn = false;
+//     }
+
+//     public void ShowStatus()
+//     {
+//         if (isOn)
+//             Console.WriteLine("Lamp  turned on");
+//         else
+//             Console.WriteLine("Lamp turned off");
+//     }
+// }
+
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Lamp myLamp = new Lamp(); 
+
+//         myLamp.ShowStatus(); 
+//         myLamp.TurnOn();      
+//         myLamp.ShowStatus(); 
+//         myLamp.TurnOff();     
+//         myLamp.ShowStatus();  
+//     }
+// }
+
+
+// // task 5
+// using System;
+//  class Employee
+//  {
+//     public string name;
+//     public string position;
+//     public int salary;
+    
+//     public Employee(string name, string position, int salary)
+//     {
+//         this.name = name;
+//         this.position = position;
+//         this.salary = salary;
+//     }
+    
+//     public string IncreaseSalary(double percent)
+//     {
+//         double result = salary + (salary * percent / 100 );
+//         return $"Salary succesfylli increased! your salary: {result}";
+//     }
+    
+//  }
+ 
+//  class Program
+//  {
+//      public static void Main(string[] args)
+//      {
+//          Employee employer1 = new Employee("Aribzhan", "developer", 500000);
+//          double percent = 15;
+//          Console.WriteLine(employer1.IncreaseSalary(percent));
+//      }
+//  }
+
+
+
+
+
+
+
